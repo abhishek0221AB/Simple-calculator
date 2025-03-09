@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 320px;
+}
+
+/* Display Styling */
+#display {
+    width: 95%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+/* Operator and Function Buttons */
+button:nth-child(4n) {
+    background-color: #f76c6c;
+}
+
+button:nth-child(4n):hover {
+    background-color: #f54e4e;
+}
+
+/* Equal Button */
+button:last-child {
+    background-color: #4caf50;
+}
+
+button:last-child:hover {
+    background-color: #45a049;
+}
